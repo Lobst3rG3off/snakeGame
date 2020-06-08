@@ -10,10 +10,10 @@ const gameBoard = document.getElementById('game-board');
 function main(currentTime) {
 
     if (gameOver){
-      if (confirm('You Lose, Hit Ok to Restart')) {
-          window.location = '/'
-      }
-      return
+        if (confirm('You Lose! Hit OK to Play Again!')) {
+            window.location = '/'
+        }
+        return
     }
 
 
@@ -45,5 +45,5 @@ function draw() {
 }
 
 function checkDeath() {
-    gameOver = outsideGrid(getSnakeHead) || snakeIntersection()
+    gameOver = outsideGrid(getSnakeHead()) || snakeIntersection()
 }
