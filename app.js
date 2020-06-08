@@ -1,4 +1,4 @@
-import { update as updateSnake, draw as drawSnake, snakeSpeed  } from './snake.js'
+import { update as updateSnake, draw as drawSnake, snakeSpeed,   } from './snake.js'
 
 
 console.log('here')
@@ -27,5 +27,6 @@ function update() {
 }
 
 function draw() {
+    gameBoard.innerHTML = ''
  drawSnake(gameBoard)
 }
